@@ -2,19 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-      <h1>Requests</h1>
-      <FilterableRequestTable requests={sorter(REQUESTS)} />
-      </div>
-    );
-  }
-}
-
-export default App;
-
 
 var REQUESTS =	[
     {"id":1, "title":"Request from Nancy","updated_at":"2015-08-15 12:27:01 -0600","created_at":"2015-08-12 08:27:01 -0600","status":"Denied"},
@@ -294,3 +281,16 @@ class RequestTable extends React.Component {
     );
   }
 }
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+      <h1>Requests</h1>
+      <FilterableRequestTable requests={sorter(REQUESTS)} />
+      </div>
+    );
+  }
+}
+
+export default App;
