@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#container {
+  padding: 5px;
+}
+
+table {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 0px 10px;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+.popup {
+  background-color: gray;
+  color: white;
+  position: absolute;
+  z-index: 100;
+  padding: 5px;
+}
+
+.popup a {
+  color: white;
+}
+
+.approved {
+  background-color: lightgreen;
+}
+
+.pending {
+  background-color: lightgray;
+}
+
+.denied {
+  background-color: pink;
+}
